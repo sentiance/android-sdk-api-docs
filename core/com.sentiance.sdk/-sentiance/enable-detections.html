@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>enableDetections</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../../images/logo-icon.svg">
+<link href="../../../styles/sentiance-fonts.css" rel="Stylesheet"></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            Android SDK v6.29.0
+                    </a>            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":library:dokkaHtmlPartial/main">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="member" id="content" pageids="core::com.sentiance.sdk/Sentiance/enableDetections/#/PointingToDeclaration//395697546">
+  <div class="breadcrumbs"><a href="../../index.html">core</a><span class="delimiter">/</span><a href="../index.html">com.sentiance.sdk</a><span class="delimiter">/</span><a href="index.html">Sentiance</a><span class="delimiter">/</span><span class="current">enableDetections</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>enable</span><wbr><span><span>Detections</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="enable-detections.html"><span class="token function">enableDetections</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.sentiance.sdk.pendingoperation/-pending-operation/index.html">PendingOperation</a><span class="token operator">&lt;</span><a href="../-enable-detections-result/index.html">EnableDetectionsResult</a><span class="token punctuation">, </span><a href="../-enable-detections-error/index.html">EnableDetectionsError</a><span class="token operator">&gt;</span></div><p class="paragraph"> Enables SDK detections. Requires a Sentiance user to be present on the device. Enabling detections is persistent across app restarts. Therefore, you do not need to call this method on every app startup. Once detections are enabled, as long as the SDK is properly initialized during startup, detections will be resumed, until you disable them by calling <a href="../-i-sentiance/disable-detections.html">disableDetections</a>. </p><p class="paragraph"> Enabling detections does not mean that the SDK is successfully able to start all detections. There may be unsatisfactory conditions that are blocking some detections. Check the <a href="../-detection-status/index.html">DetectionStatus</a> returned in the result to see if detections are running, and the <a href="../-sdk-status/index.html">SdkStatus</a> to identify possible causes if not. </p><p class="paragraph"> To automatically disable detections after some time, use the <a href="../-i-sentiance/enable-detections.html">enableDetections</a> variant of this method. </p><h4 class="">Throws</h4><div class="table"><div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-sdk-exception/index.html"><span>Sdk</span><wbr><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">if the SDK is not initialized.</p></div></div></div></div></div><hr><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="enable-detections.html"><span class="token function">enableDetections</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html"><span class="token annotation builtin">Nonnull</span></a>&nbsp;</span>expirationDate<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/Date.html">Date</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.sentiance.sdk.pendingoperation/-pending-operation/index.html">PendingOperation</a><span class="token operator">&lt;</span><a href="../-enable-detections-result/index.html">EnableDetectionsResult</a><span class="token punctuation">, </span><a href="../-enable-detections-error/index.html">EnableDetectionsError</a><span class="token operator">&gt;</span></div><p class="paragraph"> Enables SDK detections. Requires a Sentiance user to be present on the device. Enabling detections is persistent across app restarts. Therefore, you do not need to call this method on every app startup. Once detections are enabled, as long as the SDK is properly initialized during startup, detections will be resumed, until you disable them by calling <a href="../-i-sentiance/disable-detections.html">disableDetections</a>, or they expire (see <code class="lang-kotlin">expirationDate</code>). </p><p class="paragraph"> Enabling detections does not mean that the SDK is successfully able to start all detections. There may be unsatisfactory conditions that are blocking some detections. Check the <a href="../-detection-status/index.html">DetectionStatus</a> returned in the result to see if all detections are running, and the <a href="../-sdk-status/index.html">SdkStatus</a> to identify possible causes if not. </p><p class="paragraph"> This method has the same behaviour as <a href="../-i-sentiance/enable-detections.html">enableDetections</a>, except an expiration date can be specified, as an absolute <a href="https://developer.android.com/reference/kotlin/java/util/Date.html">Date</a> object, to automatically disable detections some time in the future. After having called this method with a future expiration date, you can cancel the expiration any time by calling <a href="../-i-sentiance/enable-detections.html">enableDetections</a> again. </p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>expiration</span><wbr><span><span>Date</span></span></u></div></span></div><div><div class="title"><p class="paragraph">An absolute date at which detections should automatically get disabled again.</p></div></div></div></div></div><h4 class="">Throws</h4><div class="table"><div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-sdk-exception/index.html"><span>Sdk</span><wbr><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">if the SDK is not initialized.</p></div></div></div></div></div></div></div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2026 Sentiance</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

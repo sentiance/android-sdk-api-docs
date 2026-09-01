@@ -1,0 +1,807 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Sentiance</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../../images/logo-icon.svg">
+<link href="../../../styles/sentiance-fonts.css" rel="Stylesheet"></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            Android SDK v6.29.0
+                    </a>            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":library:dokkaHtmlPartial/main">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="core::com.sentiance.sdk/Sentiance///PointingToDeclaration//395697546">
+  <div class="breadcrumbs"><a href="../../index.html">core</a><span class="delimiter">/</span><a href="../index.html">com.sentiance.sdk</a><span class="delimiter">/</span><span class="current">Sentiance</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Sentiance</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">Sentiance</a> : <a href="../../../core/com.sentiance.sdk.util/-public-api-class/index.html">PublicApiClass</a>, <a href="../-i-sentiance/index.html">ISentiance</a></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="939725013%2FFunctions%2F395697546" anchor-label="addTripMetadata" id="939725013%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-trip-metadata.html"><span>add</span><wbr><span>Trip</span><wbr><span><span>Metadata</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="939725013%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="add-trip-metadata.html"><span class="token function">addTripMetadata</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a>&nbsp;</span>metadata<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/Map.html">Map</a><span class="token operator">&lt;</span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token punctuation">, </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Adds metadata to an external ongoing trip.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1021131936%2FFunctions%2F395697546" anchor-label="addUserMetadataField" id="1021131936%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-user-metadata-field.html"><span>add</span><wbr><span>User</span><wbr><span>Metadata</span><wbr><span><span>Field</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1021131936%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="add-user-metadata-field.html"><span class="token function">addUserMetadataField</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a>&nbsp;</span>label<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a>&nbsp;</span>value<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Adds a user specific metadata field.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="337188918%2FFunctions%2F395697546" anchor-label="addUserMetadataFields" id="337188918%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-user-metadata-fields.html"><span>add</span><wbr><span>User</span><wbr><span>Metadata</span><wbr><span><span>Fields</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="337188918%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="add-user-metadata-fields.html"><span class="token function">addUserMetadataFields</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a>&nbsp;</span>metadata<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/Map.html">Map</a><span class="token operator">&lt;</span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token punctuation">, </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief ">Adds multiple user specific metadata fields.The metadata is then uploaded to the Sentiance Cloud Platform and made available in backend API queries and offloads.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1366495336%2FFunctions%2F395697546" anchor-label="createUser" id="-1366495336%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-user.html"><span>create</span><wbr><span><span>User</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1366495336%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="create-user.html"><span class="token function">createUser</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a>&nbsp;</span>options<span class="token operator">: </span><a href="../../com.sentiance.sdk.usercreation/-user-creation-options/index.html">UserCreationOptions</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.sentiance.sdk.pendingoperation/-pending-operation/index.html">PendingOperation</a><span class="token operator">&lt;</span><a href="../../com.sentiance.sdk.usercreation/-user-creation-result/index.html">UserCreationResult</a><span class="token punctuation">, </span><a href="../../com.sentiance.sdk.usercreation/-user-creation-error/index.html">UserCreationError</a><span class="token operator">&gt;</span></div><div class="brief "> Creates a Sentiance user if one does not yet exist.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="165916172%2FFunctions%2F395697546" anchor-label="disableBatteryOptimization" id="165916172%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="disable-battery-optimization.html"><span>disable</span><wbr><span>Battery</span><wbr><span><span>Optimization</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="165916172%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="disable-battery-optimization.html"><span class="token function">disableBatteryOptimization</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Prompts a system dialog, asking the user to allow disabling battery optimization for the app.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="185587110%2FFunctions%2F395697546" anchor-label="disableDetections" id="185587110%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="disable-detections.html"><span>disable</span><wbr><span><span>Detections</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="185587110%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="disable-detections.html"><span class="token function">disableDetections</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.sentiance.sdk.pendingoperation/-pending-operation/index.html">PendingOperation</a><span class="token operator">&lt;</span><a href="../-disable-detections-result/index.html">DisableDetectionsResult</a><span class="token punctuation">, </span><a href="../-disable-detections-error/index.html">DisableDetectionsError</a><span class="token operator">&gt;</span></div><div class="brief ">Disables SDK detections.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1329777150%2FFunctions%2F395697546" anchor-label="enableDetections" id="1329777150%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="enable-detections.html"><span>enable</span><wbr><span><span>Detections</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1329777150%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="enable-detections.html"><span class="token function">enableDetections</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.sentiance.sdk.pendingoperation/-pending-operation/index.html">PendingOperation</a><span class="token operator">&lt;</span><a href="../-enable-detections-result/index.html">EnableDetectionsResult</a><span class="token punctuation">, </span><a href="../-enable-detections-error/index.html">EnableDetectionsError</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="enable-detections.html"><span class="token function">enableDetections</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html"><span class="token annotation builtin">Nonnull</span></a>&nbsp;</span>expirationDate<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/Date.html">Date</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.sentiance.sdk.pendingoperation/-pending-operation/index.html">PendingOperation</a><span class="token operator">&lt;</span><a href="../-enable-detections-result/index.html">EnableDetectionsResult</a><span class="token punctuation">, </span><a href="../-enable-detections-error/index.html">EnableDetectionsError</a><span class="token operator">&gt;</span></div><div class="brief "> Enables SDK detections.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1017495203%2FFunctions%2F395697546" anchor-label="getDetectionStatus" id="-1017495203%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-detection-status.html"><span>get</span><wbr><span>Detection</span><wbr><span><span>Status</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1017495203%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="get-detection-status.html"><span class="token function">getDetectionStatus</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-detection-status/index.html">DetectionStatus</a></div><div class="brief ">Returns a the detection status as a <a href="../-detection-status/index.html">DetectionStatus</a> enum.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1165641050%2FFunctions%2F395697546" anchor-label="getDiskQuotaLimit" id="-1165641050%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-disk-quota-limit.html"><span>get</span><wbr><span>Disk</span><wbr><span>Quota</span><wbr><span><span>Limit</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1165641050%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="get-disk-quota-limit.html"><span class="token function">getDiskQuotaLimit</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief ">Returns the SDK's disk quota limit.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2054400128%2FFunctions%2F395697546" anchor-label="getDiskQuotaUsage" id="-2054400128%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-disk-quota-usage.html"><span>get</span><wbr><span>Disk</span><wbr><span>Quota</span><wbr><span><span>Usage</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2054400128%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="get-disk-quota-usage.html"><span class="token function">getDiskQuotaUsage</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief ">Returns the SDK's disk quota usage.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-678427821%2FFunctions%2F395697546" anchor-label="getInitState" id="-678427821%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-init-state.html"><span>get</span><wbr><span>Init</span><wbr><span><span>State</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-678427821%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="get-init-state.html"><span class="token function">getInitState</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-init-state/index.html">InitState</a></div><div class="brief ">Returns the initialization state of the Sentiance SDK.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-451497450%2FFunctions%2F395697546" anchor-label="getInstance" id="-451497450%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-instance.html"><span>get</span><wbr><span><span>Instance</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-451497450%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span class="token annotation builtin">JvmStatic</span></div></div><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="get-instance.html"><span class="token function">getInstance</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a>&nbsp;</span>context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Sentiance</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1430549313%2FFunctions%2F395697546" anchor-label="getMobileQuotaLimit" id="1430549313%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-mobile-quota-limit.html"><span>get</span><wbr><span>Mobile</span><wbr><span>Quota</span><wbr><span><span>Limit</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1430549313%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="get-mobile-quota-limit.html"><span class="token function">getMobileQuotaLimit</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief ">Returns the SDK's mobile data quota limit.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="541790235%2FFunctions%2F395697546" anchor-label="getMobileQuotaUsage" id="541790235%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-mobile-quota-usage.html"><span>get</span><wbr><span>Mobile</span><wbr><span>Quota</span><wbr><span><span>Usage</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="541790235%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="get-mobile-quota-usage.html"><span class="token function">getMobileQuotaUsage</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief ">Returns the SDK's mobile data quota usage.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-422947256%2FFunctions%2F395697546" anchor-label="getSdkStatus" id="-422947256%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-sdk-status.html"><span>get</span><wbr><span>Sdk</span><wbr><span><span>Status</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-422947256%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="get-sdk-status.html"><span class="token function">getSdkStatus</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-sdk-status/index.html">SdkStatus</a></div><div class="brief ">Returns an <a href="../-sdk-status/index.html">SdkStatus</a> object representing the status of the SDK.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-413027595%2FFunctions%2F395697546" anchor-label="getTransmittableDataTypes" id="-413027595%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-transmittable-data-types.html"><span>get</span><wbr><span>Transmittable</span><wbr><span>Data</span><wbr><span><span>Types</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-413027595%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="get-transmittable-data-types.html"><span class="token function">getTransmittableDataTypes</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/Set.html">Set</a><span class="token operator">&lt;</span><a href="../-transmittable-data-type/index.html">TransmittableDataType</a><span class="token operator">&gt;</span></div><div class="brief ">Returns the data types that are allowed to be sent to the Sentiance Cloud Platform.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-787099828%2FFunctions%2F395697546" anchor-label="getUserAccessToken" id="-787099828%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-user-access-token.html"><span>get</span><wbr><span>User</span><wbr><span>Access</span><wbr><span><span>Token</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-787099828%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="get-user-access-token.html"><span class="token function"><strike>getUserAccessToken</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a>&nbsp;</span>callback<span class="token operator">: </span><a href="../-token-result-callback/index.html">TokenResultCallback</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Deprecated: use <a href="../-i-sentiance/request-user-access-token.html">requestUserAccessToken</a> instead.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1241207860%2FFunctions%2F395697546" anchor-label="getUserActivity" id="-1241207860%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-user-activity.html"><span>get</span><wbr><span>User</span><wbr><span><span>Activity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1241207860%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="get-user-activity.html"><span class="token function">getUserActivity</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.sentiance.sdk.detectionupdates/-user-activity/index.html">UserActivity</a></div><div class="brief ">Returns a <a href="../../com.sentiance.sdk.detectionupdates/-user-activity/index.html">UserActivity</a> object representing the currently detected user's activity.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-141869632%2FFunctions%2F395697546" anchor-label="getUserId" id="-141869632%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-user-id.html"><span>get</span><wbr><span>User</span><wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-141869632%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="get-user-id.html"><span class="token function">getUserId</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a></div><div class="brief ">Returns the Sentiance user ID, or <code class="lang-kotlin">null</code> if a user does not exist.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="826710274%2FFunctions%2F395697546" anchor-label="getUserTags" id="826710274%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-user-tags.html"><span>get</span><wbr><span>User</span><wbr><span><span>Tags</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="826710274%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="get-user-tags.html"><span class="token function">getUserTags</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/Map.html">Map</a><span class="token operator">&lt;</span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token punctuation">, </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token operator">&gt;</span></div><div class="brief ">Returns the tags currently set for the Sentiance user, as previously provided to <a href="../-i-sentiance/set-user-tags.html">setUserTags</a>.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1948224892%2FFunctions%2F395697546" anchor-label="getVersion" id="1948224892%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-version.html"><span>get</span><wbr><span><span>Version</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1948224892%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="get-version.html"><span class="token function">getVersion</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a></div><div class="brief ">Returns the SDK version.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1218016782%2FFunctions%2F395697546" anchor-label="getWiFiQuotaLimit" id="1218016782%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-wi-fi-quota-limit.html"><span>get</span><wbr><span>Wi</span><wbr><span>Fi</span><wbr><span>Quota</span><wbr><span><span>Limit</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1218016782%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="get-wi-fi-quota-limit.html"><span class="token function">getWiFiQuotaLimit</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief ">Returns the SDK's WiFi quota limit.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="329257704%2FFunctions%2F395697546" anchor-label="getWiFiQuotaUsage" id="329257704%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-wi-fi-quota-usage.html"><span>get</span><wbr><span>Wi</span><wbr><span>Fi</span><wbr><span>Quota</span><wbr><span><span>Usage</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="329257704%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="get-wi-fi-quota-usage.html"><span class="token function">getWiFiQuotaUsage</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief ">Returns the SDK's WiFi quota usage.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1921708907%2FFunctions%2F395697546" anchor-label="init" id="-1921708907%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="init.html"><span><span>init</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1921708907%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="init.html"><span class="token function"><strike>init</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a>&nbsp;</span>sdkConfig<span class="token operator">: </span><a href="../-sdk-config/index.html">SdkConfig</a><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a>&nbsp;</span>initCallback<span class="token operator">: </span><a href="../-on-init-callback/index.html">OnInitCallback</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Deprecated: use <a href="../-i-sentiance/initialize.html">initialize</a> instead.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="993226921%2FFunctions%2F395697546" anchor-label="initialize" id="993226921%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="initialize.html"><span><span>initialize</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="993226921%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="initialize.html"><span class="token function">initialize</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.sentiance.sdk.init/-initialization-result/index.html">InitializationResult</a></div><div class="brief "> Initializes the Sentiance SDK, thereby preparing it to resume detections if a Sentiance user exists, and if detections were last enabled.</div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="initialize.html"><span class="token function">initialize</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a>&nbsp;</span>options<span class="token operator">: </span><a href="../../com.sentiance.sdk.init/-sentiance-options/index.html">SentianceOptions</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.sentiance.sdk.init/-initialization-result/index.html">InitializationResult</a></div><div class="brief "> Initializes the Sentiance SDK, thereby preparing it to resume detections if a Sentiance user exists.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="685252869%2FFunctions%2F395697546" anchor-label="initializeAsync" id="685252869%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="initialize-async.html"><span>initialize</span><wbr><span><span>Async</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="685252869%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="initialize-async.html"><span class="token function">initializeAsync</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a>&nbsp;</span>options<span class="token operator">: </span><a href="../../com.sentiance.sdk.init/-sentiance-options/index.html">SentianceOptions</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.sentiance.sdk.pendingoperation/-pending-operation/index.html">PendingOperation</a><span class="token operator">&lt;</span><a href="../../com.sentiance.sdk.init/-async-initialization-result/index.html">AsyncInitializationResult</a><span class="token punctuation">, </span><a href="../../com.sentiance.sdk.init/-async-initialization-error/index.html">AsyncInitializationError</a><span class="token operator">&gt;</span></div><div class="brief "> Initializes the Sentiance SDK, thereby preparing it to resume detections if a Sentiance user exists, and if detections were last enabled.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-52398396%2FFunctions%2F395697546" anchor-label="isAllowedToUseMobileData" id="-52398396%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-allowed-to-use-mobile-data.html"><span>is</span><wbr><span>Allowed</span><wbr><span>To</span><wbr><span>Use</span><wbr><span>Mobile</span><wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-52398396%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="is-allowed-to-use-mobile-data.html"><span class="token function">isAllowedToUseMobileData</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Returns whether the Sentiance SDK is allowed to use mobile data for uploading and downloading configuration and detection data.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1454961730%2FFunctions%2F395697546" anchor-label="isAppSessionDataCollectionEnabled" id="1454961730%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-app-session-data-collection-enabled.html"><span>is</span><wbr><span>App</span><wbr><span>Session</span><wbr><span>Data</span><wbr><span>Collection</span><wbr><span><span>Enabled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1454961730%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="is-app-session-data-collection-enabled.html"><span class="token function">isAppSessionDataCollectionEnabled</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Returns whether app session data collection is enabled.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2137377113%2FFunctions%2F395697546" anchor-label="isTripOngoing" id="2137377113%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-trip-ongoing.html"><span>is</span><wbr><span>Trip</span><wbr><span><span>Ongoing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2137377113%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="is-trip-ongoing.html"><span class="token function">isTripOngoing</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a>&nbsp;</span>tripType<span class="token operator">: </span><a href="../../com.sentiance.sdk.trip/-trip-type/index.html">TripType</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Indicates whether a trip is in progress.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="663842000%2FFunctions%2F395697546" anchor-label="isUserLinked" id="663842000%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-user-linked.html"><span>is</span><wbr><span>User</span><wbr><span><span>Linked</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="663842000%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="is-user-linked.html"><span class="token function">isUserLinked</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "> Returns whether a Sentiance user exists on the device, and whether it is linked to your app's user.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="698455942%2FFunctions%2F395697546" anchor-label="linkUser" id="698455942%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="link-user.html"><span>link</span><wbr><span><span>User</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="698455942%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="link-user.html"><span class="token function">linkUser</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a>&nbsp;</span>userLinker<span class="token operator">: </span><a href="../-user-linker/index.html">UserLinker</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.sentiance.sdk.pendingoperation/-pending-operation/index.html">PendingOperation</a><span class="token operator">&lt;</span><a href="../../com.sentiance.sdk.authentication/-user-linking-result/index.html">UserLinkingResult</a><span class="token punctuation">, </span><a href="../../com.sentiance.sdk.authentication/-user-linking-error/index.html">UserLinkingError</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="link-user.html"><span class="token function">linkUser</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a>&nbsp;</span>userLinker<span class="token operator">: </span><a href="../-user-linker-async/index.html">UserLinkerAsync</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.sentiance.sdk.pendingoperation/-pending-operation/index.html">PendingOperation</a><span class="token operator">&lt;</span><a href="../../com.sentiance.sdk.authentication/-user-linking-result/index.html">UserLinkingResult</a><span class="token punctuation">, </span><a href="../../com.sentiance.sdk.authentication/-user-linking-error/index.html">UserLinkingError</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="link-user.html"><span class="token function">linkUser</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a>&nbsp;</span>authenticationCode<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.sentiance.sdk.pendingoperation/-pending-operation/index.html">PendingOperation</a><span class="token operator">&lt;</span><a href="../../com.sentiance.sdk.authentication/-user-linking-result/index.html">UserLinkingResult</a><span class="token punctuation">, </span><a href="../../com.sentiance.sdk.authentication/-user-linking-error/index.html">UserLinkingError</a><span class="token operator">&gt;</span></div><div class="brief "> Links the Sentiance user to your app's user, on the Sentiance Cloud Platform.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="958697947%2FFunctions%2F395697546" anchor-label="removeUserMetadataField" id="958697947%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-user-metadata-field.html"><span>remove</span><wbr><span>User</span><wbr><span>Metadata</span><wbr><span><span>Field</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="958697947%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="remove-user-metadata-field.html"><span class="token function">removeUserMetadataField</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a>&nbsp;</span>label<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Removes a user specific metadata field.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-480440541%2FFunctions%2F395697546" anchor-label="requestUserAccessToken" id="-480440541%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="request-user-access-token.html"><span>request</span><wbr><span>User</span><wbr><span>Access</span><wbr><span><span>Token</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-480440541%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="request-user-access-token.html"><span class="token function">requestUserAccessToken</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.sentiance.sdk.pendingoperation/-pending-operation/index.html">PendingOperation</a><span class="token operator">&lt;</span><a href="../-token/index.html">Token</a><span class="token punctuation">, </span><a href="../-user-access-token-error/index.html">UserAccessTokenError</a><span class="token operator">&gt;</span></div><div class="brief "> Returns the user's API access token as a <a href="../-token/index.html">Token</a> object, via the PendingOperation result.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1830123439%2FFunctions%2F395697546" anchor-label="reset" id="1830123439%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="reset.html"><span><span>reset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1830123439%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="reset.html"><span class="token function">reset</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.sentiance.sdk.pendingoperation/-pending-operation/index.html">PendingOperation</a><span class="token operator">&lt;</span><a href="../../com.sentiance.sdk.reset/-reset-result/index.html">ResetResult</a><span class="token punctuation">, </span><a href="../../com.sentiance.sdk.reset/-reset-error/index.html">ResetError</a><span class="token operator">&gt;</span></div><div class="brief ">Resets the Sentiance SDK.</div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="reset.html"><span class="token function"><strike>reset</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a>&nbsp;</span>callback<span class="token operator">: </span><a href="../-reset-callback/index.html">ResetCallback</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Deprecated: use <a href="../-i-sentiance/reset.html">reset</a> instead.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-472916290%2FFunctions%2F395697546" anchor-label="setAppSessionDataCollectionEnabled" id="-472916290%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-app-session-data-collection-enabled.html"><span>set</span><wbr><span>App</span><wbr><span>Session</span><wbr><span>Data</span><wbr><span>Collection</span><wbr><span><span>Enabled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-472916290%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="set-app-session-data-collection-enabled.html"><span class="token function">setAppSessionDataCollectionEnabled</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">enabled<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "> If enabled, the SDK may collect additional sensor and location data when the app is in the foreground (i.e visible to the user).</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1287881210%2FFunctions%2F395697546" anchor-label="setIsAllowedToUseMobileData" id="1287881210%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-is-allowed-to-use-mobile-data.html"><span>set</span><wbr><span>Is</span><wbr><span>Allowed</span><wbr><span>To</span><wbr><span>Use</span><wbr><span>Mobile</span><wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1287881210%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="set-is-allowed-to-use-mobile-data.html"><span class="token function">setIsAllowedToUseMobileData</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">isAllowed<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Sets whether the Sentiance SDK is allowed to use mobile data for uploading and downloading configuration and detection data.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1368885263%2FFunctions%2F395697546" anchor-label="setSdkStatusUpdateListener" id="-1368885263%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-sdk-status-update-listener.html"><span>set</span><wbr><span>Sdk</span><wbr><span>Status</span><wbr><span>Update</span><wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1368885263%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="set-sdk-status-update-listener.html"><span class="token function">setSdkStatusUpdateListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a>&nbsp;</span>listener<span class="token operator">: </span><a href="../-sdk-status-update-listener/index.html">SdkStatusUpdateListener</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Sets a listener that is invoked when the SDK's status is updated.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-346883836%2FFunctions%2F395697546" anchor-label="setTransmittableDataTypes" id="-346883836%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-transmittable-data-types.html"><span>set</span><wbr><span>Transmittable</span><wbr><span>Data</span><wbr><span><span>Types</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-346883836%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="set-transmittable-data-types.html"><span class="token function">setTransmittableDataTypes</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a>&nbsp;</span>transmittableDataTypes<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/Set.html">Set</a><span class="token operator">&lt;</span><a href="../-transmittable-data-type/index.html">TransmittableDataType</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief ">Sets the data types that are allowed to be sent to the Sentiance Cloud Platform.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1388264026%2FFunctions%2F395697546" anchor-label="setTripTimeoutListener" id="1388264026%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-trip-timeout-listener.html"><span>set</span><wbr><span>Trip</span><wbr><span>Timeout</span><wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1388264026%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="set-trip-timeout-listener.html"><span class="token function">setTripTimeoutListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a>&nbsp;</span>listener<span class="token operator">: </span><a href="../../com.sentiance.sdk.trip/-trip-timeout-listener/index.html">TripTimeoutListener</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Sets a listener that is invoked when a trip times out.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="790118318%2FFunctions%2F395697546" anchor-label="setUserActivityListener" id="790118318%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-user-activity-listener.html"><span>set</span><wbr><span>User</span><wbr><span>Activity</span><wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="790118318%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="set-user-activity-listener.html"><span class="token function">setUserActivityListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a>&nbsp;</span>listener<span class="token operator">: </span><a href="../../com.sentiance.sdk.detectionupdates/-user-activity-listener/index.html">UserActivityListener</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Sets a listener that is invoked when a new user activity is detected.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1849444388%2FFunctions%2F395697546" anchor-label="setUserTags" id="1849444388%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-user-tags.html"><span>set</span><wbr><span>User</span><wbr><span><span>Tags</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1849444388%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="set-user-tags.html"><span class="token function">setUserTags</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a>&nbsp;</span>tags<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/Map.html">Map</a><span class="token operator">&lt;</span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token punctuation">, </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief ">Sets the tags for the current Sentiance user.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="765499269%2FFunctions%2F395697546" anchor-label="start" id="765499269%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="start.html"><span><span>start</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="765499269%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="start.html"><span class="token function"><strike>start</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a>&nbsp;</span>handler<span class="token operator">: </span><a href="../-on-start-finished-handler/index.html">OnStartFinishedHandler</a></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="start.html"><span class="token function"><strike>start</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a>&nbsp;</span>stopDate<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/Date.html">Date</a><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a>&nbsp;</span>handler<span class="token operator">: </span><a href="../-on-start-finished-handler/index.html">OnStartFinishedHandler</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Deprecated: use <a href="../-i-sentiance/enable-detections.html">enableDetections</a> instead.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1775579443%2FFunctions%2F395697546" anchor-label="startTrip" id="1775579443%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="start-trip.html"><span>start</span><wbr><span><span>Trip</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1775579443%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="start-trip.html"><span class="token function">startTrip</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a>&nbsp;</span>metadata<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/Map.html">Map</a><span class="token operator">&lt;</span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token punctuation">, </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a>&nbsp;</span>transportModeHint<span class="token operator">: </span><a href="../../com.sentiance.sdk.trip/-transport-mode/index.html">TransportMode</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.sentiance.sdk.pendingoperation/-pending-operation/index.html">PendingOperation</a><span class="token operator">&lt;</span><a href="../../com.sentiance.sdk.trip/-start-trip-result/index.html">StartTripResult</a><span class="token punctuation">, </span><a href="../../com.sentiance.sdk.trip/-start-trip-error/index.html">StartTripError</a><span class="token operator">&gt;</span></div><div class="brief ">Starts an external trip.</div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="start-trip.html"><span class="token function"><strike>startTrip</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a>&nbsp;</span>metadata<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/Map.html">Map</a><span class="token operator">&lt;</span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token punctuation">, </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a>&nbsp;</span>transportModeHint<span class="token operator">: </span><a href="../../com.sentiance.sdk.trip/-transport-mode/index.html">TransportMode</a><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a>&nbsp;</span>callback<span class="token operator">: </span><a href="../../com.sentiance.sdk.trip/-start-trip-callback/index.html">StartTripCallback</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Deprecated: use <a href="../-i-sentiance/start-trip.html">startTrip</a> instead.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-628959524%2FFunctions%2F395697546" anchor-label="stop" id="-628959524%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="stop.html"><span><span>stop</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-628959524%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="stop.html"><span class="token function"><strike>stop</strike></span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Deprecated: use <a href="../-i-sentiance/disable-detections.html">disableDetections</a> instead.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1501339088%2FFunctions%2F395697546" anchor-label="stopTrip" id="1501339088%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="stop-trip.html"><span>stop</span><wbr><span><span>Trip</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1501339088%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="stop-trip.html"><span class="token function">stopTrip</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.sentiance.sdk.pendingoperation/-pending-operation/index.html">PendingOperation</a><span class="token operator">&lt;</span><a href="../../com.sentiance.sdk.trip/-stop-trip-result/index.html">StopTripResult</a><span class="token punctuation">, </span><a href="../../com.sentiance.sdk.trip/-stop-trip-error/index.html">StopTripError</a><span class="token operator">&gt;</span></div><div class="brief ">Stops the currently ongoing external trip (i.</div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="stop-trip.html"><span class="token function"><strike>stopTrip</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a>&nbsp;</span>callback<span class="token operator">: </span><a href="../../com.sentiance.sdk.trip/-stop-trip-callback/index.html">StopTripCallback</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Deprecated: use <a href="../-i-sentiance/stop-trip.html">stopTrip</a> instead.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1306169074%2FFunctions%2F395697546" anchor-label="submitDetections" id="1306169074%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="submit-detections.html"><span>submit</span><wbr><span><span>Detections</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1306169074%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="submit-detections.html"><span class="token function">submitDetections</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.sentiance.sdk.pendingoperation/-pending-operation/index.html">PendingOperation</a><span class="token operator">&lt;</span><a href="../-submit-detections-result/index.html">SubmitDetectionsResult</a><span class="token punctuation">, </span><a href="../-submit-detections-error/index.html">SubmitDetectionsError</a><span class="token operator">&gt;</span></div><div class="brief ">Submits any pending SDK detection to the Sentiance API.</div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="submit-detections.html"><span class="token function"><strike>submitDetections</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html"><span class="token annotation builtin">Nullable</span></a>&nbsp;</span>callback<span class="token operator">: </span><a href="../-submit-detections-callback/index.html">SubmitDetectionsCallback</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Deprecated: use <a href="../-i-sentiance/submit-detections.html">submitDetections</a> instead.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="399150601%2FFunctions%2F395697546" anchor-label="updateSdkNotification" id="399150601%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-sdk-notification.html"><span>update</span><wbr><span>Sdk</span><wbr><span><span>Notification</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="399150601%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="update-sdk-notification.html"><span class="token function">updateSdkNotification</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html"><span class="token annotation builtin">NonNull</span></a>&nbsp;</span>notification<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/app/Notification.html">Notification</a></span></span><span class="token punctuation">)</span></div><div class="brief "> Replaces the notification set via <a href="../../com.sentiance.sdk.init/-sentiance-options/-builder/set-notification.html">setNotification</a>.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1261177271%2FFunctions%2F395697546" anchor-label="userExists" id="1261177271%2FFunctions%2F395697546" data-filterable-set=":library:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":library:dokkaHtmlPartial/main" data-filterable-set=":library:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="user-exists.html"><span>user</span><wbr><span><span>Exists</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1261177271%2FFunctions%2F395697546"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":library:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="user-exists.html"><span class="token function">userExists</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "> Returns whether a Sentiance user exists on the device.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2026 Sentiance</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
